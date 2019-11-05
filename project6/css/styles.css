@@ -74,12 +74,7 @@ li {
 img {
   max-width: 100%;
 }
-.hot,
-.iced,
-.additions,
-.special {
-  border: 0px solid black;
-}
+
 
 .board {
   background-color: lightgray;
@@ -96,11 +91,11 @@ img {
     /*margin-right: auto;*/
 }
 li1{
-    float: left;
-    padding: 17px;
+    float: center;
+    padding: 30px;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 30px;
 }
 ul{
     list-style-type: none;
@@ -128,4 +123,28 @@ a:hover {
   border: 5px solid #333;
   box-shadow: 2px 2px 3px rgba(0,0,0,.50);
   padding: .25rem 1rem;
+}
+
+/* Regular Mobile Styles */
+.container {
+  padding: 3rem;
+}
+p {
+  letter-spacing: 1px;
+  line-height: 1.65;
+}
+
+/* Media Query for Desktop 
+**************************
+This applies only for devices _larger_ than 768px. You can change the width to anything that makes sense for your design.
+**************************/
+@media only screen and (min-width: 768px) {
+  .container {
+    /* Make the .container display as a grid */
+    display: grid;
+    /* Setup your column grid here */
+    grid-template-columns: 1fr 1fr;
+    /* Setup the space between columns here */
+    grid-gap: 3rem;
+  }
 }
