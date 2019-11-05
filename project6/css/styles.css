@@ -103,7 +103,6 @@ a:hover {
   padding: .25rem 1rem;
 }
 
-/* Regular Mobile Styles */
 .container {
   padding: 3rem;
 }
@@ -112,17 +111,10 @@ p {
   line-height: 1.65;
 }
 
-/* Media Query for Desktop 
-**************************
-This applies only for devices _larger_ than 768px. You can change the width to anything that makes sense for your design.
-**************************/
 @media only screen and (min-width: 768px) {
   .container {
-    /* Make the .container display as a grid */
     display: grid;
-    /* Setup your column grid here */
     grid-template-columns: 1fr 1fr;
-    /* Setup the space between columns here */
     grid-gap: 3rem;
   }
 }
